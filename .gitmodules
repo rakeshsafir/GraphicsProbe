@@ -1,0 +1,12 @@
+[submodule "valgrind-mmt"]
+	path = valgrind-mmt
+	url = https://github.com/pathscale/valgrind-mmt.git
+[submodule "nvidia_sdk_samples"]
+	path = nvidia_sdk_samples
+	url = https://github.com/pathscale/nvidia_sdk_samples.git
+[submodule "pscnv"]
+	path = pscnv
+	url = https://github.com/pathscale/pscnv.git
+[submodule "envytools"]
+	path = envytools
+	url = https://github.com/envytools/envytools.git
