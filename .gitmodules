@@ -10,3 +10,6 @@
 [submodule "envytools"]
 	path = envytools
 	url = https://github.com/envytools/envytools.git
+[submodule "libdrm_pscnv"]
+	path = libdrm_pscnv
+	url = https://github.com/pathscale/libdrm_pscnv.git
