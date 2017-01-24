@@ -43,7 +43,7 @@ function build_pscnv() {
 	cd pscnv
 	mkdir build
 	cd build
-	cmake -DCMAKE_INSTALL_PREFIX=$(readlink -f ../../build) -DCMAKE_SYSROOT=$(readlink -f ../../build) -DCMAKE_CXX_FLAGS=-I$(readlink -f ../../build/include/libdrm) ..
+	CXXFLAGS=-I$(readlink -f ../../build/include/libdrm) CFLAGS=-I$(readlink -f ../../build/include/libdrm) cmake -DCMAKE_INSTALL_PREFIX=$(readlink -f ../../build) -DCMAKE_SYSROOT=$(readlink -f ../../build) ..
 	make && make install
 	cd ../../
 }
@@ -52,7 +52,10 @@ function build_pscnv() {
 function main() {
 	install_packages
 	build_envytools
+	build_libdrm_pscnv
+	build_pscnv
 }
 
 main
-	
+
+
